@@ -44,9 +44,19 @@
            <h2>no meu primeiro site</h2>
            <p class="artigo-autor">por: Caio Alves dos Santos</p>
            <p>seja bem vindo.</p> 
-           <button>🧀 0</button>
+           <button>🧀 <span>0</span></button>
+           <button>🍴 <span>0</span></button>
           </div>
           
         </main>
     </body>
-</html>
+<script>
+  const botão = document.querySelector("button");
+  botão.addEventListener("click", botãoClicado);
+ function botãoClicado(){
+   console.log("fui clicado");
+   let texto = botão.querySelector("span");
+   texto.textContent++;
+ }
+</script>
+</html>  
